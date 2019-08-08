@@ -1,4 +1,0 @@
-Source: ros-dashing-rqt-shell
-Version: 1.0.0
-Description: rqt_shell is a Python GUI plugin providing an interactive shell.
-Build-Depends:
