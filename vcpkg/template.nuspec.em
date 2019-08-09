@@ -1,20 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-rqt-shell</id>
-    <version>1.0.0</version>
-    <title>ros-dashing-rqt-shell</title>
-    <authors>Dorian Scholz</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>rqt_shell is a Python GUI plugin providing an interactive shell.</description>
+    <description>@(Description)</description>
     <dependencies>
-		<dependency id="ros-dashing-python-qt-binding" version="0.2.19"/>
-		<dependency id="ros-dashing-qt-gui"/>
-		<dependency id="ros-dashing-qt-gui-py-common"/>
-		<dependency id="ros-dashing-rqt-gui"/>
-		<dependency id="ros-dashing-rqt-gui-py"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
